@@ -15,7 +15,7 @@
   --surface:#fff;
   --text:#1a1a1a;--text-mid:#555;--text-dim:#888;--text-light:#aaa;
   --accent:#2d2d2d;--accent-light:rgba(45,45,45,.05);--accent-hover:#000;
-  --warm:#c9a87c;--warm-light:rgba(201,168,124,.1);
+  --warm:#5a7d9a;--warm-light:rgba(90,125,154,.08);
   --border:#e5e5e3;--border-light:#f0efed;
   --serif:'Playfair Display',Georgia,serif;
   --sans:'Outfit',sans-serif;
@@ -83,13 +83,13 @@ nav .container{display:flex;justify-content:center;align-items:center;gap:2.5rem
 .divider{width:40px;height:1.5px;background:var(--warm);margin:1rem auto 0}
 
 /* Experience */
-.exp-list{position:relative;max-width:700px;margin:0 auto}
+.exp-list{position:relative;max-width:700px;margin:0 auto;text-align:left}
 .exp-item{padding:2rem;background:var(--surface);border:1px solid var(--border-light);border-radius:3px;margin-bottom:1.2rem;transition:all .3s}
 .exp-item:hover{border-color:var(--warm);box-shadow:0 2px 20px rgba(0,0,0,.04)}
 .exp-top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.5rem;margin-bottom:.8rem}
 .exp-company{font-family:var(--serif);font-size:1.15rem;font-weight:700}
 .exp-company a{color:var(--text);text-decoration:none}
-.exp-company a:hover{color:var(--accent)}
+.exp-company a:hover{color:var(--warm)}
 .exp-role{font-size:.85rem;color:var(--warm);font-weight:500}
 .exp-date{font-family:var(--mono);font-size:.75rem;color:var(--text-light)}
 .exp-body{color:var(--text-mid);font-size:.88rem;line-height:1.7}
@@ -98,7 +98,7 @@ nav .container{display:flex;justify-content:center;align-items:center;gap:2.5rem
 .exp-body li::before{content:'\2014';position:absolute;left:0;color:var(--warm);font-weight:700}
 
 /* Projects */
-.proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2rem}
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2rem;text-align:left}
 .proj-card{background:var(--surface);border:1px solid var(--border-light);border-radius:3px;padding:1.8rem;transition:all .3s;cursor:pointer;position:relative;overflow:hidden}
 .proj-card::after{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:var(--warm);transform:scaleX(0);transform-origin:left;transition:transform .3s}
 .proj-card:hover{border-color:var(--warm);transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,.06)}
@@ -106,7 +106,7 @@ nav .container{display:flex;justify-content:center;align-items:center;gap:2.5rem
 .proj-num{font-family:var(--mono);font-size:.65rem;color:var(--text-light);letter-spacing:1px;margin-bottom:1rem}
 .proj-card h3{font-family:var(--serif);font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
 .proj-card h3 a{color:var(--text);text-decoration:none}
-.proj-card h3 a:hover{color:var(--accent)}
+.proj-card h3 a:hover{color:var(--warm)}
 .proj-tags{display:flex;flex-wrap:wrap;gap:.3rem;margin-bottom:.8rem}
 .proj-tag{font-family:var(--mono);font-size:.65rem;padding:.2rem .5rem;background:var(--warm-light);color:var(--warm);border-radius:2px}
 .proj-card p{font-size:.85rem;color:var(--text-mid);line-height:1.6}
@@ -114,7 +114,7 @@ nav .container{display:flex;justify-content:center;align-items:center;gap:2.5rem
 .proj-meta span{font-family:var(--mono);font-size:.7rem;color:var(--warm)}
 
 /* Skills */
-.skills-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem}
+.skills-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem;text-align:left}
 .skill-card{background:var(--surface);border:1px solid var(--border-light);border-radius:3px;padding:1.8rem;transition:all .3s}
 .skill-card:hover{border-color:var(--warm)}
 .skill-card-title{font-family:var(--serif);font-size:.95rem;font-weight:700;margin-bottom:1rem;padding-bottom:.8rem;border-bottom:1px solid var(--border-light)}
@@ -123,7 +123,7 @@ nav .container{display:flex;justify-content:center;align-items:center;gap:2.5rem
 .skill-pill:hover{background:var(--warm-light);color:var(--warm)}
 
 /* Education */
-.edu-list{max-width:700px;margin:0 auto}
+.edu-list{max-width:700px;margin:0 auto;text-align:left}
 .edu-item{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 2rem;background:var(--surface);border:1px solid var(--border-light);border-radius:3px;margin-bottom:.8rem;transition:all .3s;flex-wrap:wrap;gap:.5rem}
 .edu-item:hover{border-color:var(--warm)}
 .edu-item h3{font-family:var(--serif);font-size:1rem;font-weight:700}
@@ -131,7 +131,7 @@ nav .container{display:flex;justify-content:center;align-items:center;gap:2.5rem
 .edu-gpa{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--warm)}
 
 /* Certs */
-.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;max-width:700px;margin:2rem auto 0}
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;max-width:700px;margin:2rem auto 0;text-align:left}
 .cert-item{padding:1.5rem;background:var(--surface);border:1px solid var(--border-light);border-radius:3px;transition:all .3s}
 .cert-item:hover{border-color:var(--warm)}
 .cert-item h4{font-family:var(--serif);font-size:.9rem;font-weight:700;margin-bottom:.3rem}
@@ -150,7 +150,7 @@ nav .container{display:flex;justify-content:center;align-items:center;gap:2.5rem
 .contact-desc{font-size:.95rem;color:var(--text-mid);max-width:450px;margin:0 auto 2rem;line-height:1.7;font-weight:300}
 .contact-row{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
 .contact-btn{display:flex;align-items:center;gap:.5rem;padding:.7rem 1.5rem;border:1px solid var(--border);border-radius:2px;color:var(--text);font-size:.85rem;font-weight:500;transition:all .3s;text-decoration:none}
-.contact-btn:hover{border-color:var(--warm);color:var(--accent);transform:translateY(-2px)}
+.contact-btn:hover{border-color:var(--warm);color:var(--warm);transform:translateY(-2px)}
 .contact-btn svg{width:16px;height:16px}
 
 /* Footer */
@@ -589,22 +589,22 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border-light);f
 
   // Soft ambient light
   scene.add(new THREE.AmbientLight(0xffffff,.6));
-  const dirLight=new THREE.DirectionalLight(0xfff5e6,.8);
+  const dirLight=new THREE.DirectionalLight(0xf5f5f5,.7);
   dirLight.position.set(10,10,10);
   scene.add(dirLight);
-  const fillLight=new THREE.DirectionalLight(0xe8dcc8,.3);
+  const fillLight=new THREE.DirectionalLight(0xe8edf2,.3);
   fillLight.position.set(-10,-5,5);
   scene.add(fillLight);
 
   // Orb configs: [radius, x, y, z, color, opacity, speed]
   const orbData=[
-    [3.5, 12, -4, -8, 0xc9a87c, .12, .003],
-    [2.2, -10, 7, -5, 0xd4c4a8, .1, .004],
-    [1.8, 15, 10, -10, 0xe8dcc8, .08, .005],
-    [4, -14, -6, -12, 0xc9a87c, .07, .002],
-    [1.5, 8, 12, -6, 0xd4c4a8, .1, .006],
-    [2.8, -8, -10, -8, 0xe0d5c1, .09, .003],
-    [1.2, 18, 2, -4, 0xc9a87c, .11, .007],
+    [3.5, 12, -4, -8, 0xb8c4d0, .1, .003],
+    [2.2, -10, 7, -5, 0xc9d1d9, .08, .004],
+    [1.8, 15, 10, -10, 0xd5dbe1, .07, .005],
+    [4, -14, -6, -12, 0xa8b8c8, .06, .002],
+    [1.5, 8, 12, -6, 0xc9d1d9, .09, .006],
+    [2.8, -8, -10, -8, 0xd0d8df, .07, .003],
+    [1.2, 18, 2, -4, 0xb8c4d0, .09, .007],
   ];
 
   const orbs=[];
@@ -623,7 +623,7 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border-light);f
 
   // A single subtle ring
   const ringGeo=new THREE.TorusGeometry(5,.03,16,100);
-  const ringMat=new THREE.MeshBasicMaterial({color:0xc9a87c,transparent:true,opacity:.06});
+  const ringMat=new THREE.MeshBasicMaterial({color:0xb8c4d0,transparent:true,opacity:.04});
   const ring=new THREE.Mesh(ringGeo,ringMat);
   ring.position.set(0,0,-15);
   ring.rotation.x=Math.PI*.3;
